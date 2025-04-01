@@ -1,0 +1,736 @@
+{
+    "updated":"20190603",
+    "filters":[
+        {
+            "name":"Original",
+            "desc":"원본",
+            "thumbnail":"filter_v4_original",
+            "filterinfo":{
+                "filterId":"ORIGINAL",
+                "inputs":[
+                    { "id":"in_1", "param":"source" }
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"basic",  "params":[]  }
+                ],
+                "parameters":[],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"]
+                ]
+            }
+        },
+
+        {
+            "name":"Basic",
+            "desc":"기본",
+            "thumbnail":"filter_v4_basic",
+            "filterinfo":{
+                "filterId":"BASIC",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_basic.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin",  "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name":"Plain1",
+            "desc":"플레인1",
+            "thumbnail":"filter_v4_plain1",
+            "intensity":1.0,
+            "filterinfo":{
+                "filterId":"PLAIN1",
+                "inputs":[{"id":"in_1","param":"source"},
+                        {"id":"in_2","param":"plain.png"}],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin",  "params":[]  },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Plain2",
+            "desc":"플레인2",
+            "thumbnail":"filter_v4_plain2",
+            "filterinfo":{
+                "filterId":"PLAIN2",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"natural01.png"}
+                ],
+                "adjustments":[
+                    {"id":"ad_1","module":"fastSmoothSkin",  "params":[] },
+                    {"id":"ad_2","module":"lookup","params":[]}
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name":"Pure1",
+            "desc":"순수한1",
+            "thumbnail":"filter_v4_pure1",
+            "filterinfo":{
+                "filterId":"PURE1",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"natural02.png"}
+                ],
+                "adjustments":[
+                    {"id":"ad_1","module":"fastSmoothSkin",  "params":[] },
+                    {"id":"ad_2","module":"lookup","params":[]}
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Pure2",
+            "desc":"순수한2",
+            "thumbnail":"filter_v4_pure2",
+            "filterinfo":{
+                "filterId":"PURE2",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"cl12.png"}
+                ],
+                "adjustments":[
+                    {"id":"ad_1","module":"fastSmoothSkin",  "params":[] },
+                    {"id":"ad_2","module":"lookup","params":[]}
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Pure3",
+            "desc":"순수한3",
+            "thumbnail":"filter_v4_pure3",
+            "filterinfo":{
+                "filterId":"PURE3",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"cl17.png"}
+                ],
+                "adjustments":[
+                    {"id":"ad_1","module":"fastSmoothSkin",  "params":[] },
+                    {"id":"ad_2","module":"lookup","params":[]}
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2","ad_2","lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name": "Pinky1",
+            "desc": "핑키1",
+            "thumbnail": "filter_v4_pinky1",
+            "filterinfo": {
+                "filterId": "PINKY1",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "lovely04.png" },
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin",  "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Pinky2",
+            "desc": "핑키2",
+            "thumbnail": "filter_v4_pinky2",
+            "filterinfo": {
+                "filterId": "PINKY2",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "lovely02.png" },
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin",  "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Pinky3",
+            "desc": "핑키3",
+            "thumbnail": "filter_v4_pinky3",
+            "filterinfo": {
+                "filterId": "PINKY3",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "lovely03.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin",  "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Pinky4",
+            "desc":"핑키4",
+            "thumbnail":"filter_v4_pinky4",
+            "filterinfo":{
+                "filterId":"PINKY4",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_pinky1.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name": "Vivid1",
+            "desc": "선명한1",
+            "thumbnail": "filter_v4_vivid1",
+            "filterinfo": {
+                "filterId": "VIVID1",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    {"id":"in_2","param":"re01.png"},
+                    {"id":"in_3","param":"vignette_brown_rect.png"}
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] },
+                    { "id": "ad_3", "module": "vignette_overlay", "params": [] },
+                    { "id": "ad_4", "module": "alphablend", "params":[]  }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["in_3", "ad_3", "lookup"],
+                    ["ad_2", "ad_3", "texOrigin"],
+                    ["ad_1", "ad_4", "texOrigin"],
+                    ["ad_3", "ad_4", "texBlend"],
+                    ["pa_1", "ad_4", "alpha"]
+                ]
+            }
+        },
+        {
+            "name": "Vivid2",
+            "desc": "선명한2",
+            "thumbnail": "filter_v4_vivid2",
+            "filterinfo": {
+                "filterId": "VIVID2",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id":"in_2","param":"vintage.png"}
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Vivid3",
+            "desc": "선명한3",
+            "thumbnail": "filter_v4_vivid3",
+            "filterinfo": {
+                "filterId": "VIVID3",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id":"in_2","param":"so15.png"}
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Vivid4",
+            "desc": "선명한4",
+            "thumbnail": "filter_v4_vivid4",
+            "filterinfo": {
+                "filterId": "VIVID4",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id":"in_2","param": "so01.png"}
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    ["in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Vivid5",
+            "desc": "선명한5",
+            "thumbnail": "filter_v4_vivid5",
+            "filterinfo": {
+                "filterId": "VIVID5",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "so11.png" },
+                    { "id": "in_3", "param": "vignette_brown_rect.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] },
+                    { "id": "ad_3", "module": "vignette_overlay", "params": [] },
+                    { "id": "ad_4", "module": "alphablend", "params":[]  }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    [ "in_1", "ad_1", "texOrigin" ],
+                    [ "in_2", "ad_2", "lookup"],
+                    [ "ad_1", "ad_2", "texOrigin" ],
+                    [ "in_3", "ad_3", "lookup"],
+                    [ "ad_2", "ad_3", "texOrigin" ],
+                    [ "ad_1", "ad_4", "texOrigin" ],
+                    [ "ad_3", "ad_4", "texBlend" ],
+                    [ "pa_1", "ad_4", "alpha" ]
+                ]
+            }
+        },
+        {
+            "name": "Warm1",
+            "desc": "따뜻한1",
+            "thumbnail": "filter_v4_warm1",
+            "filterinfo": {
+                "filterId": "WARM1",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "warm01.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Warm2",
+            "desc": "따뜻한2",
+            "thumbnail": "filter_v4_warm2",
+            "filterinfo": {
+                "filterId": "WARM2",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "warm02.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Warm3",
+            "desc":"따뜻한3",
+            "thumbnail":"filter_v4_warm3",
+            "filterinfo":{
+                "filterId":"WARM3",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_warm1.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name":"Cool1",
+            "desc":"시원한1",
+            "thumbnail":"filter_v4_cool1",
+            "filterinfo":{
+                "filterId":"COOL1",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"pure02.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Cool2",
+            "desc": "시원한2",
+            "thumbnail": "filter_v4_cool2",
+            "filterinfo": {
+                "filterId": "COOL2",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "pure01.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Cool3",
+            "desc": "시원한3",
+            "thumbnail": "filter_v4_cool3",
+            "filterinfo": {
+                "filterId": "COOL3",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "cool01.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name": "Cool4",
+            "desc": "시원한4",
+            "thumbnail": "filter_v4_cool4",
+            "filterinfo": {
+                "filterId": "COOL4",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "cool02.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": ["lookup", "cool02.png"] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    ["in_1", "ad_1", "texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1", "ad_2", "texOrigin"],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+
+        {
+            "name": "Yummy1",
+            "desc": "맛있는1",
+            "thumbnail": "filter_v4_yummy1",
+            "filterinfo": {
+                "filterId": "YUMMY1",
+                "inputs": [
+                    { "id": "in_1", "param": "source" },
+                    { "id": "in_2", "param": "cl18.png" }
+                ],
+                "adjustments": [
+                    { "id": "ad_1", "module": "fastSmoothSkin", "params":[]  },
+                    { "id": "ad_2", "module": "lookup", "params": [] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain": [
+                    [ "in_1", "ad_1", "texOrigin" ],
+                    [ "in_2", "ad_2", "lookup"],
+                    [ "ad_1", "ad_2", "texOrigin" ],
+                    ["pa_1", "ad_2", "intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Yummy2",
+            "desc":"맛있는2",
+            "thumbnail":"filter_v4_yummy2",
+            "filterinfo":{
+                "filterId":"YUMMY2",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_pure1.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Yummy3",
+            "desc":"맛있는3",
+            "thumbnail":"filter_v4_yummy3",
+            "filterinfo":{
+                "filterId":"YUMMY3",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_warm2.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Nature1",
+            "desc":"자연1",
+            "thumbnail":"filter_v4_nature1",
+            "filterinfo":{
+                "filterId":"NATURE1",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_cool2.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Nature2",
+            "desc":"자연2",
+            "thumbnail":"filter_v4_nature2",
+            "filterinfo":{
+                "filterId":"NATURE2",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_pure2.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"Nature3",
+            "desc":"자연3",
+            "thumbnail":"filter_v4_nature3",
+            "filterinfo":{
+                "filterId":"NATURE3",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_natural.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+
+        {
+            "name":"Sepia",
+            "desc":"세피아",
+            "thumbnail":"filter_v4_sepia",
+            "intensity":1.0,
+            "filterinfo":{
+                "filterId":"SEPIA",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"ef_sepia.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        },
+        {
+            "name":"BW",
+            "desc":"흑백",
+            "thumbnail":"filter_v4_bw",
+            "intensity":1.0,
+            "filterinfo":{
+                "filterId":"BW",
+                "inputs":[
+                    {"id":"in_1","param":"source"},
+                    {"id":"in_2","param":"bw.png"}
+                ],
+                "adjustments":[
+                    { "id":"ad_1", "module":"fastSmoothSkin", "params":[] },
+                    { "id":"ad_2", "module":"lookup", "params":[] }
+                ],
+                "parameters":[{"id":"pa_1","name":"intensity"}],
+                "chain":[
+                    ["in_1","ad_1","texOrigin"],
+                    [ "in_2", "ad_2", "lookup"],
+                    ["ad_1","ad_2","texOrigin"],
+                    ["pa_1","ad_2","intensity"]
+                ]
+            }
+        }
+    ]
+}
