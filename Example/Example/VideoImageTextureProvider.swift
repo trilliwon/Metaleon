@@ -45,7 +45,7 @@ class VideoImageTextureProvider: NSObject {
 
         // Use a guard to ensure the method can access a video capture device with a given camera position
 
-        guard let camera = AVCaptureDevice.default(AVCaptureDevice.DeviceType.builtInWideAngleCamera, for: AVMediaType.video, position: AVCaptureDevice.Position.back) else {
+        guard let camera = AVCaptureDevice.default(AVCaptureDevice.DeviceType.builtInWideAngleCamera, for: AVMediaType.video, position: AVCaptureDevice.Position.front) else {
             print("Unable to access camera.")
             return false
         }

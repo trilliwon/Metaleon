@@ -1,0 +1,15 @@
+{
+  "originHash" : "5b4dbcefc191cfba31a748112894f53463eb8b36e18bf41d72cc5b9947164bda",
+  "pins" : [
+    {
+      "identity" : "metaleon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/trilliwon/Metaleon",
+      "state" : {
+        "revision" : "1c7e6cc35661e75a47566c7e25f1201cb72d1958",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

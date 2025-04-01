@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,7 +41,7 @@
 		27EECD0E22DC5DC10049E51F /* vintage.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0151A22C9EBBF009F8308 /* vintage.png */; };
 		27EECD0F22DC5DC10049E51F /* warm01.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0150D22C9EBBD009F8308 /* warm01.png */; };
 		27EECD1022DC5DC10049E51F /* warm02.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0151F22C9EBBF009F8308 /* warm02.png */; };
-		B483F3CB2D9C27CF00D0F076 /* Metaleon in Frameworks */ = {isa = PBXBuildFile; productRef = B483F3CA2D9C27CF00D0F076 /* Metaleon */; };
+		B483F3CE2D9C327B00D0F076 /* Metaleon in Frameworks */ = {isa = PBXBuildFile; productRef = B483F3CD2D9C327B00D0F076 /* Metaleon */; };
 		C2BB72242281676E001BE1B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BB72232281676E001BE1B7 /* AppDelegate.swift */; };
 		C2BB72262281676E001BE1B7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BB72252281676E001BE1B7 /* CameraViewController.swift */; };
 		C2BB722B2281676F001BE1B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2BB722A2281676F001BE1B7 /* Assets.xcassets */; };
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B483F3CB2D9C27CF00D0F076 /* Metaleon in Frameworks */,
+				B483F3CE2D9C327B00D0F076 /* Metaleon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +274,7 @@
 			);
 			mainGroup = C2BB72172281676E001BE1B7;
 			packageReferences = (
-				B483F3C92D9C27CF00D0F076 /* XCLocalSwiftPackageReference "../../Metaleon" */,
+				B483F3CC2D9C327B00D0F076 /* XCRemoteSwiftPackageReference "Metaleon" */,
 			);
 			productRefGroup = C2BB72212281676E001BE1B7 /* Products */;
 			projectDirPath = "";
@@ -559,16 +559,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B483F3C92D9C27CF00D0F076 /* XCLocalSwiftPackageReference "../../Metaleon" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Metaleon;
+/* Begin XCRemoteSwiftPackageReference section */
+		B483F3CC2D9C327B00D0F076 /* XCRemoteSwiftPackageReference "Metaleon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trilliwon/Metaleon";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B483F3CA2D9C27CF00D0F076 /* Metaleon */ = {
+		B483F3CD2D9C327B00D0F076 /* Metaleon */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = B483F3CC2D9C327B00D0F076 /* XCRemoteSwiftPackageReference "Metaleon" */;
 			productName = Metaleon;
 		};
 /* End XCSwiftPackageProductDependency section */

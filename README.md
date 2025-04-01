@@ -13,6 +13,8 @@
 - **Memory Optimization**: Efficiently manages GPU resources using MTLHeap
 - **Real-time Processing**: Designed for high-performance real-time camera and video processing
 
+<img src="https://github.com/trilliwon/Metaleon/blob/main/Example/icons/sample.jpeg?raw=true" width="300" alt="Sample Filter">
+
 ## Supported Effects
 
 ### Image Filters
@@ -60,7 +62,7 @@ filterProvider.next() // or .prev()
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/Metaleon.git", from: "1.0.0")
+    .package(url: "https://github.com/trilliwon/Metaleon.git", from: "1.0.0")
 ]
 ```
 

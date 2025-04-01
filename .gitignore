@@ -71,4 +71,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+.DS_Store
 buildServer.json
+
+.swiftpm/
